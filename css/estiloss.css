@@ -1,0 +1,195 @@
+body{background-color: lavender;
+     }
+
+header{display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;}
+
+header.logo{flex: 1; display: flex; justify-content: flex-start;}
+header.txt{flex: 2;
+           text-align: center;}
+header.iconos{flex: 1;
+             text-align: right;}
+
+   h2{text-decoration: underline;font-size: 35px;}
+   h3{ text-decoration: underline;font-size: 35px;}
+  h5{ text-decoration: underline;font-size: 110%;}
+.txt{font-size: 200%;
+  left: 22%;
+  top: 15%;
+  text-align: center;
+  position: absolute;
+     text-transform: uppercase;}
+.mapa{background-image: url(fotos/sanmi.png);
+       width: 50vh;
+        height:70vh;
+        display: flex;
+       justify-content:space-between;}
+.recetas-similares{font-size: 150%;
+                  display: flex;
+                  justify-content: space-around;
+                  margin: 35px;
+                  padding: 0;}
+.recetas-similares a{text-decoration: none;
+                     color: black;
+                     padding: 10px 20px;
+                     border-radius: 10px;
+                    font-size: 80%;
+                     transition: color 0.3s;}
+.recetas-similares a:hover{ background-color: pink;
+                           text-decoration: underline;}
+.logo{background-image: url(fotos/logo.png);
+      width: 250px;
+      height: 200px;
+      margin-top: 15px;
+    display: flex;
+  justify-content: flex-start;}
+.pink{background-color: pink;}
+.imagen{width: 25vw;
+        height: 30vw;
+        display: flex;
+       justify-content: center; }
+.video{width: 50%;
+       height: 60vh;}
+.iconos{text-align: right;}
+.iconos img{width: 300%;
+             height: 300%;
+             max-width: 85px;
+             border-radius: 50%;
+             color:pink;
+             list-style: none;
+             justify-content: flex-end;
+             overflow-clip-margin: content-box;
+            padding: 0;}
+.iconos a{display: inline-block;
+           text-decoration: underline;
+          padding: 0;
+          margin: 0 8px;
+          transition: color: 0.3;}
+.iconos a:hover{ transform: scale(1.2);}
+
+.modo-inclusivo{
+    display: block;
+     margin: 20px auto;
+     padding: 20px 10px;
+     font-size: 16px;
+     color: #fff;
+     background-color: #007bff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+.modo-inclusivo: hover{ background-color: #0056b3;}
+body.inclusivo .modo-inclusivo{ background-color: #f0f0f0;
+                                color: #2c2c2c;}
+
+body.inclusivo{background-color: #666!important; color: #fff !important;}
+
+body.inclusivo.modo-inclusivo: hover{ background-color: #ddd;}
+
+body.inclusivo.datos-creador{ background-color: #555; color: violet;}
+
+body.inclusivo.datos-creador: hover{ background-color: violet;}
+
+footer{background-color: pink;
+       color: black;
+       margin: 0;
+       text-align: center;
+        padding: 0;}
+.datos-creador{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: violet;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.datos-creador: hover{
+   background-color: #218838;
+}
+
+  h6{text-decoration: none;
+     display: flex;
+     justify-content: center;
+    font-size: 120%;
+    top: 20%;}
+.san{ width: 25vw;
+      height: 15vw;
+      padding: 0;
+      left: 35%;
+      top: 40%;
+     display: flex;
+     position: relative;
+     justify-content: center;}
+.description{ font-size: 130%;}
+.redes{text-align: center;
+        padding: 20px;}
+.redes img{width: 300%;
+           height: 300%;
+           max-width: 85px;
+          border-radius: 50%;
+          color:pink;
+         justify-content:flex-end;
+          overflow-clip-margin: content-box;
+           padding: 0;}
+.redes li{list-style-type:none;
+          display: inline-block;}
+.redes a{display: inline-block;
+          text-decoration: none;
+          padding: 0;
+          margin: 0 10px;
+          transition: color: 0.3 ease;}
+.redes a:hover{transform: scale(1.2);
+               color: violet;}
+.whatsapp-flotante{position: fixed;
+                   bottom: 20px;
+                   right: 10px;
+                   padding: 10px;
+                   z-index: auto;}
+.whatsapp-flotante img{ width: 90%;
+                       height: 90%;
+                       border-radius: 50% 50%;}
+.corazon{ width: 300px;
+          height: auto;
+          display: none;}
+@media (max-width: 767px){
+       .corazon{display: block;}
+     }
+
+@media (max-width:700px) {
+       .libros { display: flex;
+                justify-content: center;
+                 align-items: center;
+                 text-align: center;}}
+
+
+.libros img{ width: 220px;
+             height: 150px;
+            margin: auto;
+            display: flex;
+             justify-content: center;}
+  .recetas-similares{ display: none;}
+
+  @media (min-width:701px) and (max-width:900px) {
+    .recetas.similares{
+       display: flex;
+    }
+  .iconos{
+  flex-direction: row;
+       }
+
+  }
+@media (min-width: 901px) {
+  .recetas-similares{
+    display: flex;
+  }
+.corazon img{
+   width: 200px;
+}
+
+}
